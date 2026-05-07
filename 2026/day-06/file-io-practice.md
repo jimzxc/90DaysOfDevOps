@@ -29,5 +29,8 @@ tail -n 2 notes.txt
 
 ```bash
 > notes.txt
+```
+
+```bash
 cat /dev/null notes.txt
 ```

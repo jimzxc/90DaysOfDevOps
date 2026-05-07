@@ -66,8 +66,9 @@ Command:
 ```bash
 pgrep -a sshd
 
+```
 
-...
+
 
 ## ℹ️ Lessons learned (Day 05)
 - I learned how to identify my OS and kernel details using `uname -a`, `lsb_release -a`, and `/etc/os-release`.

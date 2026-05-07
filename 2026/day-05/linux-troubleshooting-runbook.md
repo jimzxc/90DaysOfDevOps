@@ -65,7 +65,6 @@ Command:
 
 ```bash
 pgrep -a sshd
-
 ```
 
 

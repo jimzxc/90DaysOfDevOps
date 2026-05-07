@@ -67,5 +67,13 @@ Command:
 pgrep -a sshd
 
 
+---
 
-## lesson learned: I learned how to check the process, how many the connectivity of the port. I learned how to check the ubuntu version, details. How to show listening port top portion. Memory and CPU
+## ℹ️ Lessons learned (Day 05)
+- I learned how to identify my OS and kernel details using `uname -a`, `lsb_release -a`, and `/etc/os-release`.
+- I learned how to find the main `sshd` PID using `pgrep -a sshd` and confirm it with `systemctl status ssh`.
+- I learned how to capture a quick CPU/memory snapshot for a specific PID using `ps ... -p <pid>` and `free -h`.
+- I learned how to check disk usage and log volume growth using `df -h` and `du -sh /var/log`.
+- I learned how to inspect listening ports and active connections using `ss -tulpn` and `ss -plant | grep :22`.
+- I learned how to review service and system logs using `journalctl -u ssh` and `tail` on `/var/log/syslog`.
+- I learned what “next steps” look like when issues worsen (collect more logs, inspect sockets/files with `lsof`, and trace behavior with `strace`).

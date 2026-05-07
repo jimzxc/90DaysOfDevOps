@@ -26,5 +26,8 @@ tail -n 2 notes.txt
 
 
 ### Empty the contents of a file
+
+```bash
 > notes.txt
 cat /dev/null notes.txt
+```

@@ -13,26 +13,43 @@
 - **Largest items in `/var/log` (top 5)**:
   ```bash
   du -sh /var/log/* 2>/dev/null | sort -h | tail -5
-View hostname:
+  ```
+
+### View hostname:
+```bash
 cat /etc/hostname
-List home directory (including hidden files):
+```
+
+
+### List home directory (including hidden files):
+```bash
 ls -la ~
-Scenarios
+```
+## Scenarios
+
 1) Service not starting (myapp)
 Commands (in order):
-
+```bash
 systemctl status myapp --no-pager
 cat /var/log/myapp.log
 systemctl is-enabled myapp
 journalctl -u myapp -n 50 --no-pager
+```
+
 2) High CPU usage
+```bash
 htop
 ps aux --sort=-%cpu | head -20
+```
 3) Finding service logs (systemd example: docker)
+```bash
 systemctl status docker --no-pager
 journalctl -u docker -n 50 --no-pager
 journalctl -u docker -f
+```
 4) Permission denied (/home/user/backup.sh)
+```bash
 ls -l /home/user/backup.sh
 chmod +x /home/user/backup.sh
 /home/user/backup.sh
+```

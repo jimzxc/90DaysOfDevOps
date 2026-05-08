@@ -41,3 +41,8 @@ chmod 755 script.sh
 Run a script (after it is executable)
 ./script.sh
 ```
+
+
+```bash
+What I learned to this task is to create filetxt, give permission, execute and write in the script.
+```

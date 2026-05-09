@@ -29,10 +29,13 @@ These are commands I use regularly. Together they cover navigation, files, proce
 - **`chmod`** — change file permissions  
 
 ### Networking
-- **`curl`** — HTTP/API checks, downloads  
-- **`dig`** — DNS lookups  
+- **`ping`** — basic reachability and latency (example: `ping -c 4 example.com`)
+- **`curl`** — HTTP/API checks, downloads
+- **`dig`** — DNS lookups
+- **`nc` (netcat)** — quick TCP/UDP connectivity tests and simple client/server experiments  
+  - Examples: `nc -vz host 443` (TCP port check), `nc -l -p 12345` (listen on a port — lab only)
 
-> **Note:** You wrote **`netcut`** — if you meant **network troubleshooting**, common choices are **`nc`** (netcat), **`ss`**, or **`ping`**. Use **`netcat`** (`nc`) if that’s what you practice.
+> **Note:** You wrote **`netcat`** — if you meant **network troubleshooting**, common choices are **`nc`** (netcat), **`ss`**, or **`ping`**. Use **`netcat`** (`nc`) if that’s what you practice.
 
 ### Automation
 - **`scripts.sh`** — shell scripts (run with **`chmod +x script.sh`** then **`./script.sh`**)

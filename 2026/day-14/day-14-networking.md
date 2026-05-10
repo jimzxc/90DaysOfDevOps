@@ -105,9 +105,12 @@ Interpretation
 308 means “redirect permanently” — here it redirects HTTP → HTTPS (Location: https://dijoker.com).
 For HTTPS layer checks, follow up with:
 curl -I https://dijoker.com
-Connections snapshot (netstat vs ss)
-netstat was not installed:
+```
 
+### Connections snapshot (netstat vs ss)
+### netstat was not installed:
+
+```bash
 netstat -an | head
 # -bash: netstat: command not found
 Use ss instead:

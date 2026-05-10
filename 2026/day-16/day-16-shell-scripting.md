@@ -3,9 +3,10 @@
 ```bash
 #!/bin/bash
 echo "Hello, World Class DevOps!"
-Shebang (#!/bin/bash)
-If you remove the shebang, the script can still run when executed as ./hello.sh because the kernel may fall back to default behavior, or you invoke it with bash hello.sh. Best practice: keep a shebang so the script always runs with the intended interpreter.
 ```
+- Shebang (#!/bin/bash)
+If you remove the shebang, the script can still run when executed as ./hello.sh because the kernel may fall back to default behavior, or you invoke it with bash hello.sh. Best practice: keep a shebang so the script always runs with the intended interpreter.
+
 
 
 ### Variables (variables.sh)
@@ -14,8 +15,9 @@ If you remove the shebang, the script can still run when executed as ./hello.sh 
 NAME="Jimboy Balan"
 ROLE="DevOps Engineer"
 echo "I am ${NAME} and I am a ${ROLE}"
-Quote style: use double quotes so variables expand; use single quotes for literal text. Prefer "${NAME}" over broken quoting like "I am "$NAME"".
 ```
+- Quote style: use double quotes so variables expand; use single quotes for literal text. Prefer "${NAME}" over broken quoting like "I am "$NAME"".
+
 
 ### User input (read)
 ```bash

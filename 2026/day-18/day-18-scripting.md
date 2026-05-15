@@ -30,9 +30,10 @@ add() {
 }
 greet "Jimboy"
 printf 'Sum: %s\n' "$(add 7 5)"
-Task 2 — disk_check.sh (functions + “return values” idea)
-In bash, functions “return” numbers 0–255 via return, and you output text via echo/printf. Here we print info and return success.
 ```
+
+### Task 2 — disk_check.sh (functions + “return values” idea)
+#### In bash, functions “return” numbers 0–255 via return, and you output text via echo/printf. Here we print info and return success.
 
 ```bash
 #!/bin/bash
@@ -51,9 +52,8 @@ main() {
 }
 main "$@"
 ```
+
 ### Task 3 — strict_demo.sh
-
-
 #### Uncomment one block at a time to observe the behavior.
 
 ```bash

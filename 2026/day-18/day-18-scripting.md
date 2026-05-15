@@ -95,8 +95,10 @@ without_local
 printf 'After without_local: %s\n' "$value"
 ```
 
+
+### Task 5 — system_info.sh (intermediate reporter)
+
 ```bash
-Task 5 — system_info.sh (intermediate reporter)
 #!/bin/bash
 set -euo pipefail
 section() {
